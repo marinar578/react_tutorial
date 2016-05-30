@@ -6,8 +6,10 @@
 import React from 'react';
 import { History } from 'react-router';
 import h from '../helpers';
-import react-mixin from 'react-mixin';
+import reactMixin from 'react-mixin';
+import autobind from 'autobind-decorator'; 
 
+@autobind 
 class StorePicker extends React.Component {
 
     goToStore(event) {
